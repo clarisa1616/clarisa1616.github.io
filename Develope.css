@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.hero{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0,0,0,0.75)),url(smkn1.jpeg);
+    background-size: cover;
+    font-family: sans-serif;
+    position: relative;
+}
+nav{
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 100px;
+    cursor: pointer;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0px 20px;
+    position: relative;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+.hero ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background:  #ff0000;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.hero ul li:hover::after{
+    width: 100%;
+}
+.info{
+    margin-left: 8%;
+    margin-top: 15%;
+}
+.info h1{
+    font-size: 50px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+span{
+    color: #ff0000;
+}
+.info p{
+    color: #FFFFFF;
+    line-height: 22px;
+}
+.img-box{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+.img-box img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: left 1s;
+}
+.img-box:hover .main-img{
+    left: 54%;
+}
+.footer {
+    background-color: #696969;
+    padding: 25px;
+}
+
+.footer .author {
+    font-family: sans-serif;
+    text-align: center;
+    color: white;
+}
+
+.footer .SMKN1 {
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 20;
+    color: white;
+}
+
+.footer .SMKN1 a {
+    color: white;
+}

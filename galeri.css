@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0,0,0,0.75)),url(smkn1.jpeg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    background-attachment: fixed;
+    
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background:  #ff0000;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.container{
+    width: 80%;
+    margin: 80px auto;
+}
+.container h1{
+    width: 85%;
+    top: 20%;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    font-size: 44px;
+    font-family: 'Great Vibes', cursive;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.col{
+    flex-basis: 50%;
+    min-width: 250px;
+}
+.feature-img{
+    width: 75%;
+    margin: auto;
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.small-img-row{
+    display: flex;
+    background: #efefef;
+    margin: 20px 0;
+    align-items: center;
+    border-radius: 6px;
+    overflow: hidden;
+    width: 100%;
+}
+.small-img{
+    position: relative;
+}
+.small-img img{
+    width: 150px;
+}
+.small-img-row p{
+    margin-left: 20px;
+    color: #707070;
+    line-height: 20px;
+    font-size: 15px;
+    text-align: left;
+}
+.footer {
+    background-color: #696969;
+    padding: 25px;
+}
+
+.footer .author {
+    font-family: sans-serif;
+    text-align: center;
+    color: white;
+}
+
+.footer .SMKN1 {
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 20;
+    color: white;
+}
+
+.footer .SMKN1 a {
+    color: white;
+}
